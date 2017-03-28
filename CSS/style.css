@@ -1,0 +1,84 @@
+*{margin: 0; padding:0; transition: 500ms;}
+@font-face
+{
+    font-family: 'Ubuntu-L';
+    src: url('../fonts/Ubuntu-L.ttf');
+}
+
+body
+{
+    font-family: 'Ubuntu-L';
+}
+
+#menu
+{
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    background-color: rgba(25, 139, 202, 0.4); 
+    padding: 15px 0;
+}
+
+#menu li
+{
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid #6e9cff;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#menu li:hover
+{
+    color: white;
+    background-color: #6e9cff;
+    cursor: pointer;
+}
+
+#content img
+{
+    float: left;
+    width: 50%;
+}
+
+/* Large desktop */
+@media (min-width: 1024px) 
+{
+    #menu li
+    {
+        margin: 0 30px;
+        width: 10%;
+    }
+     
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px)
+{
+    #menu li
+    {
+        margin: 5px 0;
+        width: 80%;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) 
+{ 
+    #menu li
+    { 
+        margin: 5px 0;
+        width: 80%;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px)
+{
+    #menu li
+    { 
+        margin: 5px 0;
+        width: 80%;
+    }
+
+}
